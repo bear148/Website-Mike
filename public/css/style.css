@@ -1,0 +1,43 @@
+#container {
+    text-align: center;
+    color: red;
+    text-shadow: 5px 5px 15px red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: red;
+    font-size: 5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    color: red;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+    width: 75%;
+    height: 2px;
+    border: 5px solid gray;
+    border-radius: 5px;
+}
+
+h5 {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#bioText {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+a {
+    color: red;
+}

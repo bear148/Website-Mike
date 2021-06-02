@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/public/css/style.css">
+        <script language="JavaScript">
+            /* THIS CRAP DOES NOTHING IM JUST TO LAZY TO DELETE IT! */
+            function checkRefresh() {
+                var today = new Date();
+                var now = today.getUTCSeconds();
+                var cookie = document.cookie;
+                var cookieArray = cookie.split("; ");
+                for(var loop=0; loop < cookieArray.length; loop++) {
+                    var nameValue = cookieArray[loop].split('=');
+                    if( nameValue[0].toString() == 'SHTS' ) {
+                        var cookieTime = parseInt( nameValue[1] );
+                    }
+                    else if( nameValue[0].toString() == 'SHTSP' ) {
+                        var cookieName = nameValue[1];
+                    }
+                }
+                if( cookieName &&
+                        cookieTime &&
+                        cookieName == escape(location.href) &&
+                        Math.abs(now - cookieTime) < 5 ) {
+                            console.log("Refresh Detected!")
+                        }
+            }
+            function prepareForRefresh() {
+                if( refresh_prepare > 0 ) {
+                    // Turn refresh detection on so that if this
+                    // page gets quickly loaded, we know it's a refresh
+                    var today = new Date();
+                    var now = today.getUTCSeconds();
+                    document.cookie = 'SHTS=' + now + ';';
+                    document.cookie = 'SHTSP=' + escape(location.href) + ';';
+                }
+                else {
+                    // Refresh detection has been disabled
+                    document.cookie = 'SHTS=;';
+                    document.cookie = 'SHTSP=;';
+                }
+            }
+        </script>
+    </head>
+    <body onLoad="JavaScript:checkRefresh();" onUnload="JavaScript:prepareForRefresh();">
+        <div id="container">
+            <h1>Michael S.</h1>
+            <hr>
+            <img src="/public/images/y12.PNG" height=1025 width=726 alt="WoT Screenshot">
+            <h3>Hello, World!</h3>
+            <button type="button" value="Submit" onClick="firstFunc()">Show Projects</button>
+            <h5 id="test"></h5>
+            <a id="gitLink" href="https://github.com/BizzyPythonBear"></a>
+            <br>
+            <br>
+            <button type="button" value="Submit" onclick="displayBio()">Bio</button>
+            <p id="bioText"></p>
+            <script>
+                function firstFunc() {
+                    document.getElementById("test").innerText = "Go to my github to view my projects!"
+                    document.getElementById("gitLink").innerText = "--Github Page--"
+                }
+                function displayBio() {
+                    document.getElementById("bioText").innerText = "Hello there, my name is Michael S, and I'm an aspiring developer. My favorite languages to work with include python, javascript, html, css, lua, and kotlin. I first got into programming when I wanted to make a game. Though, after setting this goal so ealry on, I quickly realized that this was to big of a goal, so I set out to make something more reasonable, which was a simple hello world program in the language I still love to this day, python."
+                }
+            </script>
+        </div>
+    </body>
+</html>
