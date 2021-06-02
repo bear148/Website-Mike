@@ -12,11 +12,18 @@
         <div id="container">
             <h1>Michael S.</h1>
             <hr>
+            <h6>Designed, Shaped, and Created By: Michael S.</h6>
             <img src="/public/images/y12.PNG" alt="WoT Screenshot">
             <h3>Hello, World!</h3>
             <button type="button" onClick="firstFunc()">Show Projects</button>
             <h5 id="test"></h5>
             <a id="gitLink" href="https://github.com/BizzyPythonBear"></a>
+            <p id="projectDesc"></p>
+            <h6 id="projects"></h6>
+            <li id="li1"></li>
+            <li id="li2"></li>
+            <li id="li3"></li>
+            <li id="li4"></li>
             <br>
             <br>
             <button type="button" onclick="displayBio()">Bio</button>
@@ -25,6 +32,12 @@
                 function firstFunc() {
                     document.getElementById("test").innerText = "Go to my github to view my projects!"
                     document.getElementById("gitLink").innerText = "--Github Page--"
+                    document.getElementById("projectDesc").innerText = "Most of my projects are discontinued, or I just dont want to work on them."
+                    document.getElementById("projects").innerText = "-- These are my best projects --"
+                    document.getElementById("li1").innerText = "This Website"
+                    document.getElementById("li2").innerText = "JavaScript Discord Bot"
+                    document.getElementById("li3").innerText = "Snake In Python"
+                    document.getElementById("li4").innerText = "(COMING SOON!!) Disc.py bot"
                 }
                 function displayBio() {
                     document.getElementById("bioText").innerText = "Hello there, my name is Michael S, and I'm an aspiring developer. My favorite languages to work with include python, javascript, html, css, lua, and kotlin. I first got into programming when I wanted to make a game. Though, after setting this goal so ealry on, I quickly realized that this was to big of a goal, so I set out to make something more reasonable, which was a simple hello world program in the language I still love to this day, python."

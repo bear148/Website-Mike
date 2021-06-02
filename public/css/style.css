@@ -1,5 +1,6 @@
 #container {
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -55,4 +56,14 @@ p {
 
 button {
     text-align: center;
+}
+
+h6 {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul, li {
+    list-style: none;
+    color: red;
 }
