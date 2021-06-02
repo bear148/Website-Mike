@@ -1,0 +1,4 @@
+To add new files, folders, or changes to repo, do the following.
+git add *
+git commit -m ""
+git push -u origin main
