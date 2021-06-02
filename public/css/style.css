@@ -1,8 +1,5 @@
 #container {
     text-align: center;
-    color: red;
-    text-shadow: 5px 5px 15px red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -13,12 +10,14 @@ h1 {
     color: red;
     font-size: 5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 h3 {
     color: red;
     font-size: 3em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 hr {
@@ -26,18 +25,34 @@ hr {
     height: 2px;
     border: 5px solid gray;
     border-radius: 5px;
+    text-align: center;
 }
 
 h5 {
     color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 #bioText {
     padding-left: 100px;
     padding-right: 100px;
+    text-align: center;
 }
 
 a {
     color: red;
+    text-align: center;
+}
+
+#link-contain {
+    text-align: center;
+}
+
+p {
+    color:red;
+}
+
+button {
+    text-align: center;
 }
