@@ -11,23 +11,28 @@
     <body>
         <div id="container">
             <h1>Michael S.</h1>
+            <a class="topLinks" href="https://reddit.com/user/pine41">Reddit</a>
+            <a class="topLinks" href="https://github.com/BizzyPythonBear">Github</a>
             <hr>
             <h6>Designed, Shaped, and Created By: Michael S.</h6>
             <img src="/public/images/y12.PNG" alt="WoT Screenshot">
             <h3>Hello, World!</h3>
+            <button type="button" onClick="displayBio();displaySiteSource();firstFunc();">Display All</button>
+            <br>
             <button type="button" onClick="firstFunc()">Show Projects</button>
             <h5 id="test"></h5>
             <a id="gitLink" href="https://github.com/BizzyPythonBear"></a>
             <p id="projectDesc"></p>
             <h6 id="projects"></h6>
-            <li id="li1"></li>
-            <li id="li2"></li>
-            <li id="li3"></li>
-            <li id="li4"></li>
-            <br>
-            <br>
+            <p id="li1"></p>
+            <p id="li2"></p>
+            <p id="li3"></p>
+            <p id="li4"></p>
             <button type="button" onclick="displayBio()">Bio</button>
             <p id="bioText"></p>
+            <button type="button" onClick="displaySiteSource()">Source</button>
+            <p id="sourceInfo"></p>
+            <a id="mainDirecLink" href="https://github.com/BizzyPythonBear"></a>
             <script>
                 function firstFunc() {
                     document.getElementById("test").innerText = "Go to my github to view my projects!"
@@ -41,6 +46,10 @@
                 }
                 function displayBio() {
                     document.getElementById("bioText").innerText = "Hello there, my name is Michael S, and I'm an aspiring developer. My favorite languages to work with include python, javascript, html, css, lua, and kotlin. I first got into programming when I wanted to make a game. Though, after setting this goal so ealry on, I quickly realized that this was to big of a goal, so I set out to make something more reasonable, which was a simple hello world program in the language I still love to this day, python."
+                }
+                function displaySiteSource() {
+                    document.getElementById("sourceInfo").innerText = "This is the entire directory for this website if you're too lazy to go to the github page."
+                    document.getElementById("mainDirecLink").innerText = "Source"
                 }
             </script>
         </div>

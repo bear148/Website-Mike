@@ -36,8 +36,6 @@ h5 {
 }
 
 #bioText {
-    padding-left: 100px;
-    padding-right: 100px;
     text-align: center;
 }
 
@@ -63,7 +61,7 @@ h6 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-ul, li {
-    list-style: none;
-    color: red;
+img {
+    width: 25%;
+    height: 25%;
 }
