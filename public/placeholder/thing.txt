@@ -2,6 +2,6 @@ To add new files, folders, or changes to repo, do the following.
 
 --- USE THESE COMMANDS IN GIT-BASH! ---
 
-git add *
-git commit -m ""
+g a *
+g co -m ""
 git push -u origin main

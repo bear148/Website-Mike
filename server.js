@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
     app.use('/public/css', express.static(__dirname + '/public/css'));
     app.use('/public/images', express.static(__dirname + '/public/images'));
     app.use('/public/html', express.static(__dirname + '/public/html'));
+    app.use('/public/python', express.static(__dirname + '/public/python'));
 });
 
 app.listen(3000, function () {
